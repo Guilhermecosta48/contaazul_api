@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: contaazul-api
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: CONTA_AZUL_TOKEN
+        sync: false  # você define no painel manualmente
